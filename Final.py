@@ -9,7 +9,7 @@ with open("most_recommended_mobile_phones.pkl", 'rb') as f:
 # List of Mobile_data to choose from - mobile prices, brands, ratings, and images
 Mobile_data = {
     'Mobile_Brand': ['Samsung Galaxy', 'Samsung Galaxy', 'OnePlus', 'Motorola', "Google", "Nothing", "Realme"],  # brand information
-    'Model':['Samsung Galaxy S21 FE', 'Google Pixel 7', 'Nothing Phone (2)', 'OnePlus 11R', 'Realme 12 Pro+', 'SAMSUNG Galaxy S23 5G', 'Motorola Edge 40'],
+    'Model':['Samsung Galaxy S21 FE', 'SAMSUNG Galaxy S23 5G', 'OnePlus 11R', 'Motorola Edge 40', 'Google Pixel 7', 'Nothing Phone (2)', 'Realme 12 Pro+'],
     'Price': ['₹34,999', '₹39,999', '₹37,988', '₹26,999', '₹36,999', '₹38,999', '₹26,999'],  # price in INR
     'Rating': [4.3, 4.6, 4.5, 4.3, 4.3, 4.4, 4.4],
     'image': [
@@ -81,4 +81,4 @@ if selected_brands:
             st.write("---")
 else:
     st.write("No brand selected yet.")
-# streamlit run f2.py
+# streamlit run Final.py
