@@ -58,8 +58,8 @@ if selected_brands:
     if filtered_data.empty:
         st.write("No products found matching the selected criteria.")
     else:
-        st.subheader(f"You Selected : {', '.join(selected_brands)} Brands")
-        
+        st.subheader(f"You Selected : {', '.join(selected_brands)}")
+
         # Display individual recommendations
         for i, row in filtered_data.iterrows():
             st.subheader(f"**{row['Model']}**")
@@ -70,7 +70,7 @@ if selected_brands:
             # Create a prompt using the loaded recommendation template
             prompt = f"""
 
-            Based on sentiment analysis, we recommend the following mobile phone:
+            **Based on sentiment analysis, we recommend the following mobile phone:**
 
             **Model**: {row['Product Name']}
             - **Positive review score**: {row['average_compound_score']:.2f}
